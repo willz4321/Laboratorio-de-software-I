@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body{
+    background-color: cadetblue;
+}
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+main{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+form {
+    width: 98%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: aliceblue;
+}
+/* Seccion datos personales */
+.seccion-personales {
+    width: 99%;
+    height: 100%;
+    background-color: rgb(148, 32, 113);
+    margin-top: 1em;
+}
+.article-personales-title {
+    display: flex;
+    justify-content: center;
+    background-color: aliceblue;
+}
+.article-personales-title h2 {
+    background-color: rgb(148, 32, 113); 
+    padding: .2em;
+    border-top-left-radius: .2em;
+    border-top-right-radius: .2em;
+}
+.article-personales {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+.article-personales section {
+    width: 100%;
+    font-size: 4ch;
+    margin-left: 0.4em;
+    padding-top: .3em;
+}
+.article-personales input {
+    font-size: 1.3ch;
+    border-radius: 0.2em;
+}
+/* Seccion datos sobre carrera */
+.seccion-carrera {
+    width: 99%;
+    height: 100%;
+    background-color: rgb(49, 177, 182);
+    margin-top: 1em;
+}
+.article-carrera-title {
+    display: flex;
+    justify-content: center;
+    background-color: aliceblue;
+}
+.article-carrera-title h2 {
+    background-color: rgb(49, 177, 182);
+    padding: .2em;
+    border-top-left-radius: .2em;
+    border-top-right-radius: .2em;
+}
+.article-carrera {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+.article-carrera section {
+    width: 100%;
+    font-size: 4ch;
+    margin-left: 0.4em;
+    padding-top: .3em;
+}
+.article-carrera input {
+    font-size: 1.3ch;
+    border-radius: 0.2em;
+}
+.article-carrera select {
+    font-size: 1.3ch;
+    border-radius: 0.2em;
+}
+.seccion-carrera-radio {
+    display: flex;
+    flex-direction: column;
+}
+.seccion-carrera-checkbox{
+    display: flex;
+    flex-direction: column;
+}
+/* Seccion datos sobre Materia */
+.seccion-materia {
+    width: 99%;
+    height: 100%;
+    background-color: rgb(45, 209, 64);
+    margin-top: 1em;
+}
+.article-materia-title {
+    display: flex;
+    justify-content: center;
+    background-color: aliceblue;
+}
+.article-materia-title h2 {
+    background-color: rgb(45, 209, 64);
+    padding: .2em;
+    border-top-left-radius: .2em;
+    border-top-right-radius: .2em;
+}
+.article-materia {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+.article-materia section {
+    width: 100%;
+    font-size: 4ch;
+    margin-left: 0.4em;
+    padding-top: .3em;
+}
+.article-materia input {
+    font-size: 1.3ch;
+    border-radius: 0.2em;
+}
+.article-materia select {
+    font-size: 1.3ch;
+    border-radius: 0.2em;
+}
+.horario-materia{
+    display: flex;
+    flex-direction: column;
+}
+.seccion-materia-checkbox{
+    display: flex;
+    flex-direction: column;
+}
+/* Botones */
+.botones {
+    display: flex;
+    align-items: center;
+    height: 3em;
+}
+.button-css {
+    margin: 1em;
+    background-color: rgb(39, 94, 234);
+    font-size: large;
+    color: aliceblue;
+    cursor: pointer;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    transition: transform 0.3s ease; 
+}
+.button-css:hover {
+    transform: scale(1.1);
+}

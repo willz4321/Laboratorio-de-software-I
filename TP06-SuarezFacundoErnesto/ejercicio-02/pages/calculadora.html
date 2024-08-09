@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Asegúrate de incluir Bootstrap en tu archivo HTML -->
+    <link rel="stylesheet" href="../../bootstrap-5.3.3/css/bootstrap.min.css">
+</head>
+<body>
+    <section id="contenedor-menu">
+        <nav class="navbar navbar-expand-md bg-body-tertiary">
+            <div class="container-fluid">
+                <div id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Centificado</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Calculadora</a>
+                        </li>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>   
+    </section>
+    <main>
+        <div class="container">
+            <form id="myForm">
+                <div class="form-group">
+                    <label for="name">Monto</label>
+                    <input type="number" class="form-control" id="monto" placeholder="Ingrese el monto">
+                </div>
+                <div class="form-group">
+                    <label for="cuotas">Cuotas</label>
+                    <input type="number" class="form-control" id="cuotas" placeholder="Ingrese las cuotas">
+                </div>
+                <button type="button" class="btn btn-primary" id="calcular">Calcular</button>
+            </form>
+            <div id="caclOutput"></div>
+        </div>
+    </main>
+    <footer >
+    </footer>
+
+    <script src="../../bootstrap-5.3.3/js/bootstrap.bundle.js"  crossorigin="anonymous"></script>
+    <script src="../js/calcular.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Asegúrate de incluir Bootstrap en tu archivo HTML -->
+    <link rel="stylesheet" href="../bootstrap-5.3.3/css/bootstrap.min.css">
+</head>
+<body>
+    <section id="contenedor-menu">
+        <nav class="navbar navbar-expand-md bg-body-tertiary">
+            <div class="container-fluid">
+                <div id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Centificado</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/calculadora.html">Calculadora</a>
+                        </li>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>   
+    </section>
+    <main>
+        <div class="container">
+            <form id="myForm">
+                <div class="form-group">
+                    <label for="name">Nombre</label>
+                    <input type="text" class="form-control" id="name" placeholder="Ingrese su nombre">
+                </div>
+                <div class="form-group">
+                    <label for="doc">Documento</label>
+                    <input type="number" class="form-control" id="dni" placeholder="Ingrese su Documento">
+                </div>
+                <button type="button" class="btn btn-primary" id="generar">Generar</button>
+            </form>
+            <div id="output"></div>
+        </div>
+    </main>
+    <footer >
+    </footer>
+
+    <script src="../bootstrap-5.3.3/js/bootstrap.bundle.js"  crossorigin="anonymous"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>

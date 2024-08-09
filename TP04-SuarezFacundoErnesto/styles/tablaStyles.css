@@ -1,0 +1,69 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+th:hover {
+    background-color: #37803a;
+}
+.hora{
+    background-color: rgb(204, 236, 75);
+    transition: background-color 0.3s ease;
+}
+
+.hora:hover {
+    background-color: rgb(174, 206, 45);
+}
+.lab {
+    background-color: rgb(227, 237, 45);
+    transition: background-color 0.3s ease;
+}
+.lab:hover {
+    background-color: rgb(146, 152, 33);
+}
+.elem{
+    background-color: rgb(54, 94, 237);
+    color: white;
+    transition: background-color 0.3s ease;
+}
+.elem:hover {
+    background-color: rgb(40, 62, 142);
+}
+.aleg{
+    background-color: rgb(171, 50, 228);
+    color: white;
+    transition: background-color 0.3s ease;
+}
+.aleg:hover {
+    background-color: rgb(116, 36, 152);
+}
+.cal{
+    background-color: rgb(45, 185, 232);
+    color: white;
+    transition: background-color 0.3s ease;
+}
+.cal:hover{
+    background-color: rgb(37, 147, 183);
+}
+.labP {
+    background-color: rgb(232, 95, 45);
+    color: white;
+    transition: background-color 0.3s ease;
+}
+.labP:hover {
+    background-color: rgb(183, 81, 44);
+}

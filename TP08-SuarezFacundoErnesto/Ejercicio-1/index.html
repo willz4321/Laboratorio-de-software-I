@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <title>Ejercicio 1</title>
+</head>
+<body class="w-100 h-100">
+    <header class="text-center">
+        <h1>Resident Evil</h1>
+    </header>
+    <nav class="nav">
+        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+        <a class="nav-link" href="./html/Otrostitulos.html">Otros titulos</a>
+    </nav>
+    <main class="mt-4">
+      <section class="w-100 d-flex col justify-content-center mb-4">
+        <section id="carouselExample" class="carousel slide w-50">
+            <section class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Diapositiva 1">
+                </button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Diapositiva 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Diapositiva 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Diapositiva 4"></button>
+            </section>
+            <section class="carousel-inner">
+              <section class="carousel-item active">
+                <img src="img/resident-evil-village.webp" class="d-block w-100" alt="...">
+              </section>
+              <section class="carousel-item">
+                <img src="img/feature-residentevil2.jpg" class="d-block w-100" alt="...">
+              </section>
+              <section class="carousel-item">
+                <img src="img/resident-evil-3-remake-hunter-beta.avif" class="d-block w-100" alt="...">
+              </section>
+              <section class="carousel-item">
+                <img src="img/resident-evil-3.webp" class="d-block w-100" alt="...">
+              </section>
+            </section>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </section>
+      </section>
+      <section class="d-flex justify-content-center row mb-4">
+        <article class="w-50">
+          <nav>
+            <section class="nav nav-tabs" id="nav-tab">
+                <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Info</button>
+                <button class="nav-link " id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profiel" aria-selected="false">Requisitos</button>
+            </section>
+          </nav>
+          <section class="tab-content" id="nav-tabContent">
+            <article class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0" >
+                <h2>Informacion del juego</h2>
+                <p>Resident Evil, o Biohazard en Japón y partes del sudeste asiático, es una serie de juegos de terror japonesa y franquicia de medios creada por Capcom. Consiste en juegos de terror de supervivencia, disparos en tercera persona y disparos en primera persona, en los que los jugadores suelen sobrevivir en entornos habitados por zombis y otras criaturas aterradoras. La franquicia se ha expandido a otros medios, incluyendo una serie de películas de acción en vivo, películas animadas, series de televisión, cómics, novelas, dramas de audio y mercancía. Resident Evil es la franquicia de terror más taquillera.</p>
+                <h2>Caracteristicas</h2>
+                <p>El primer juego introdujo un esquema de control al que la comunidad de jugadores se ha referido como "controles de tanques" a la serie. En un juego con controles de tanques, los jugadores controlan el movimiento en relación con la posición del personaje del jugador, en lugar de en relación con la cámara virtual fija desde la que el jugador ve la escena actual. [46] Al presionar hacia arriba (por ejemplo, en un D-pad, joystick analógico o teclas de movimiento del cursor) en el controlador del juego se mueve el personaje en la dirección en la que se mira, presionando los pedales hacia atrás, y hacia la izquierda y hacia la derecha gira el personaje. [46] Esto puede parecer contrario a la intuición cuando el personaje está mirando a la cámara, ya que los controles están esencialmente invertidos en este estado. Esto difiere de muchos juegos en 3D, en los que los personajes se mueven en la dirección en la que el jugador empuja los controles desde la perspectiva de la cámara. [46] Algunos críticos han postulado que el esquema de control es intencionalmente torpe, destinado a aumentar el estrés y exacerbar la dificultad.</p>
+            </article>
+            <article class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="1">
+                <h2>Requisitos</h2>
+                <p>SO: 7+
+                    Procesador: 1.7 GHz Dual Core.
+                    Memoria: 2 GB de RAM.
+                    Gráficos: NVIDIA GeForce GTX 260, ATI Radeon 4870 HD, or equivalent card with at least 512 MB VRAM.
+                    Almacenamiento: 5 GB de espacio disponible.
+                    Tarjeta de sonido: DirectX Compatible Sound Card.</p>
+            </article>
+          </section>
+        </article>
+      </section>
+    </main>
+    <footer>
+        <p><a href="mailto:willz4321@gmail.com">Facundo Suarez</a></p>
+    </footer>
+    <script src="js/miArchivo.js"></script>
+    <script src="./bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Web site juego de tronos">
+    <link rel="stylesheet" href="../../bootstrap-5.3.3/css/bootstrap.min.css">
+    <meta name="author" content="Facundo suarez">
+  <title>TRABAJO PRÁCTICO Nº 4</title>
+</head>
+<body>
+  <header>
+    <h1>
+        Game of thrones
+    </h1>
+  </header>
+
+  <section id="contenedor-menu">
+    <nav class="navbar navbar-expand-md bg-body-tertiary">
+        <div class="container-fluid">
+            <div id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Game of Thrones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./table.html">Tabla</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./gallery.html">Galeria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Formulario</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./tablaIrregular.html">Calendario</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>   
+</section>
+<main>   
+    <section id="registros" class="form-estilos">
+      <form action="registro.php" method="POST" class="container">
+          <div class="mb-3">
+              <label for="nomb" class="form-label">Nombre</label>
+              <input type="text" name="nombre" id="nomb" placeholder="Ingrese su nombre" class="form-control" aria-label="nombre" required>
+          </div>
+          <div class="mb-3">
+              <label for="corr" class="form-label">Correo</label>
+              <input type="email" name="correo" id="corr" placeholder="Ingrese su correo" class="form-control" aria-label="correo" required>
+          </div>
+          <div class="mb-3">
+              <label for="tel" class="form-label">Telefono</label>
+              <input type="tel" name="telefono" id="tel" placeholder="Ingrese su tel sin 0 y sin 15" class="form-control" aria-label="telefono">
+          </div>
+          <div class="mb-3">
+              <label for="mens" class="form-label">Mensaje</label>
+              <textarea id="mensaje" name="mensaje" rows="4" cols="40" aria-label="mensaje" class="form-control"></textarea>
+          </div>
+          <div class="mb-3">
+            <input type="submit" value="Enviar" class="btn btn-success w-100" aria-label="Enviar formulario">
+            <input type="reset" value="limpiar" class="btn btn-secondary w-100 mt-2" aria-label="Limpiar formulario">
+          </div>
+      </form>
+  </section>  
+</main>
+
+  <footer>
+    <p>© copyright <a href="mailto:willz4321@gmail.com">Facundo Ernesto Suarez</a></p>
+</footer>
+<script src="../../bootstrap-5.3.3/js/bootstrap.bundle.js"  crossorigin="anonymous"></script>
+</body>
+</html>

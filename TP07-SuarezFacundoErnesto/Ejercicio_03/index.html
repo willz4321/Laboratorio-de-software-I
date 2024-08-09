@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gramajo Victoria">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Ejercicio 3</title>
+</head>
+<body>
+    <main>
+        <section class="p-3">
+            <form action="#" method="post" class="border border-info p-5" id="formu">
+                <fieldset>
+                    <legend id="regi" class="text-info">Registro</legend>
+                    <section>
+                        <label for="idio" class="form-label" id="texto1">Idioma</label>
+                        <select class="form-select" name="idioma" id="idio">
+                            <option value="1" id="esp">Español</option>
+                            <option value="2" id="ing">English</option>
+                            <option value="3" id="port">Português</option>
+                        </select>
+                    </section>
+                    <section>
+                        <label for="usu" class="form-label" id="texto2">Usuario</label>
+                        <input type="text" name="usuario" class="form-control" id="usu" required>
+                    </section>
+                    <section>
+                        <label for="contra1" class="form-label" id="texto3">Contraseña</label>
+                        <input type="text" name="contraseña1" class="form-control" id="contra1" required>
+                    </section>
+                    <section>
+                        <label for="contra2" class="form-label" id="texto4">Repetir Contraseña</label>
+                        <input type="text" name="contraseña2" class="form-control" id="contra2" required>
+                    </section> 
+                    <strong id="comp"></strong>
+                    <section class="form-check form-switch mt-2">
+                        <input type="checkbox" class="form-check-input" type="checkbox" role="switch" name="termycond" id="tyc" required>
+                        <label for="tyc" class="form-label" id="texto5">Acepto los terminos y condiciones</label>
+                    </section>
+                    <section>
+                        <input type="submit" value="Enviar" class="btn btn-info text-light form-control" id="btnEnviar">
+                    </section>
+                </fieldset>
+            </form>
+          
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

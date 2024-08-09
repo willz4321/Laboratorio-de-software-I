@@ -6,25 +6,28 @@
 body {
     width: 100vw;
     height: 100vh;
+    background-color: antiquewhite;
 }
 header {
     background-color: rgb(34, 131, 68);
     display: flex;
     justify-content: center;
-    margin-top: 6.2em;
+    margin-top: 25%;
 }
 nav {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 1em;
+    padding: 1em 0;
     background-color: rgb(217, 200, 66);
     position: fixed; 
     top: 0;
     z-index: 1000;
 }
-
+section {
+    margin-top: 1em;;
+}
 nav ul {
     height: 20%;
     display: flex;
@@ -57,7 +60,7 @@ img {
 }
 .figure-main{
     display: block;
-    margin-top: 0.5em;
+    margin: 2em 0;
     align-items: center;
 }
 .figure-main img {
@@ -70,7 +73,7 @@ article h2 {
 .articulo-torneo {
     display: flex;
     align-items: center;
-    padding: 10px 0;
+    padding:  1em 0;
 }
 
 .articulo-torneo figure {
@@ -80,12 +83,68 @@ article h2 {
 .articulo-torneo img {
     width: 100%; 
 }
-.articulo-torneo div {
+.articulo-torneo section {
     height: 100%;
 }
 .color-article-a {
-    background-color: rgb(31, 169, 184);
+    background-color: rgb(181, 169, 80);
 }
 .color-article-b {
-    background-color: rgb(31, 54, 184);
+    background-color: rgb(136, 93, 23);
+}
+.figure-equipos{
+    width: 100%;
+    height: 100%;
+    margin-top: 0.4em;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+.figure-equipos img {
+   width: 15%;
+   height: 15%;
+   margin-left: 0.2em;
+}
+.articulo-equipos{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    border: 0.1em solid rgba(77, 76, 76, 0.187);
+    margin-top: 0;
+    background-color: rgb(147, 133, 112);
+}
+.article-equipos-todos {
+    display: flex;
+    border: 0.1em solid rgb(122, 119, 119);
+    padding-bottom: 0.5em;
+}
+
+.article-equipos-todos figure {
+    margin-right: 1em; 
+}
+
+.section-equipos{
+    margin-top: 0;
+    margin-left: 1em;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+.article-equipos *{
+    height: 100%;
+   padding-top: 0.4em;
+}
+.figure-icono-equipo{
+    margin-top: 1em;
+}
+.figure-icono-equipo img {
+    width: 100%;
+    height: 100%;
+}
+footer{
+    display: flex;
+    justify-content: center;
 }

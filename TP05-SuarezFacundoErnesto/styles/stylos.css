@@ -1,0 +1,393 @@
+@media all and (min-width: 320px) {
+    * {
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+    
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: antiquewhite;
+}
+header {
+    background-color: rgb(180, 162, 32);
+    display: flex;
+    justify-content: center;
+}
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+}
+section {
+    margin-top: 1em;;
+}
+nav ul {
+    height: 20%;
+    display: flex;
+    list-style-type: none;
+}
+nav ul li {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+a {
+    text-decoration: none;
+
+}
+a p {
+    display: flex;
+    justify-content: center;
+}
+/* Datos de index */
+.portada-titulo {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 1.5em;
+    font-style: normal;
+}
+.figure-principal{
+    width: 100%;
+}
+.figure-principal img {
+    width: 100%;
+}
+.seccion-datos-artista {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: .2em;
+    gap: 1.5em;
+}
+
+
+/* Fin datos de index */
+
+/* Datos de conciertos */
+#tabla {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#tabla caption {
+    font-size: 2em;
+    font-family: cursive;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 1em;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+th {
+    background-color: #333;
+    color: white;
+    font-weight: bold;
+}
+thead th {
+    display: none;
+} 
+
+tr:nth-of-type(odd) {
+    background: #eee;
+}
+
+th, td {
+    display: block;
+    width: 100%;
+}
+
+td:before {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+}
+.figure-conciertos {
+    width: 100%;
+    text-align: center;
+}
+.figure-conciertos img {
+ width: 90%;
+}
+/* Fin de datos de conciertos */
+
+/* Datos de conciertos */
+.main-canciones section{ 
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 4em;
+}
+.figure-canciones {
+    width: auto;
+}
+.lista-canciones {
+    list-style-type: none;
+    padding: 0;
+}
+.lista-canciones li {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+.figure-canciones {
+    margin-right: 15px;
+}
+.figure-canciones img {
+    width: 50%;
+    height: auto;
+}
+.lista-canciones p {
+    flex-grow: 1;
+    margin: 0;
+}
+.lista-canciones audio {
+    margin-left: 15px;
+}
+/* Fin de datos de canciones */
+
+/* Datos de clip */
+
+.main-clip {
+    text-align: center;
+    padding: 1em;
+}
+
+.secciones-clip {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+.video-container {
+    position: relative;
+    width: 70%;
+    padding-bottom: 39.375%; /* 16:9 ratio */
+    margin: auto;
+    margin-top: 1em;
+}
+
+.video-container iframe,
+.video-container video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+/* Fin de datos de clip */
+
+.figure-main{
+    display: block;
+    margin: 2em 0;
+    align-items: center;
+}
+.figure-main img {
+    width: 100%;
+}
+article h2 {
+    display: flex;
+    justify-content: center;
+}
+
+
+footer{
+    display: flex;
+    justify-content: center;
+}
+
+/* Menu desplegable */
+#contenedor-menu {
+  position: fixed;
+  z-index: 1000;
+  margin: 0.5em;
+  
+}
+#contenedor-menu img {
+    width: 10vw;
+    transition: transform 0.3s ease; 
+}
+
+#contenedor-menu #cerrar {
+    display: none;
+}
+#contenedor-menu nav {
+  position: absolute;
+}
+#contenedor-menu #contenedor-enlaces {
+    display: flex;
+    flex-direction: column;
+    height: 0;
+    width: 50vw;
+    transition: height 1s ease;
+    overflow: auto;
+}
+#contenedor-menu:target #abrir {
+    display: none;
+    
+}
+#contenedor-menu:target #cerrar{
+    display: block;
+    
+}
+#contenedor-menu:target #contenedor-enlaces{
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+    width: 50vw;
+    transition: height 1s ease;
+
+}
+#contenedor-enlaces a {
+    display: block;
+    width: 100%;
+    margin-bottom: 0.25em;
+    text-decoration: none;
+    background-color: rgb(171, 133, 133);
+    padding: .5em;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+}   
+@media all and (min-width: 768px) {
+ /* Contenedor principal */
+ .contendor-principal {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+ }
+ .main-clip{
+    width: 80%;
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    overflow-y: auto;
+ }
+ .main-conciertos{
+    width: 80%;
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    overflow-y: auto;
+ }
+ .main-canciones{
+    width: 80%;
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    overflow-y: auto;
+ }
+ .main-index{
+    width: 80%;
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    overflow-y: auto;
+ }
+ /* FIn contenedor principal */
+ 
+    /* Menu desplegable */
+#contenedor-menu {
+    height: 100vh;
+    width: 20%;
+    position: static !important;
+    z-index: 1000;
+    margin: 0em;
+    background-color: rgb(50, 47, 47);
+
+  }
+  #contenedor-menu img {
+    display: none; 
+}
+
+#contenedor-menu nav {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+#contenedor-menu #contenedor-enlaces {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+  #contenedor-menu:target #abrir {
+      display: none;
+  }
+  #contenedor-menu:target #cerrar{
+      display: none; 
+  }
+  #contenedor-menu:target #contenedor-enlaces{
+      display: flex;
+      flex-direction: column; 
+      height: auto; 
+      width: 100%; 
+      transition: height 1s ease;
+  }
+  #contenedor-enlaces a {
+    background-color: rgb(15, 103, 28);
+    color: rgb(227, 227, 227);
+    transition: background-color 0.3s ease; 
+}
+
+#contenedor-enlaces a:hover {
+    background-color: rgb(108, 182, 108);
+}
+
+    .video-container {
+        width: 95%;
+        padding-bottom: 53.125%;
+    }
+
+    /* Datos de concierto */
+
+    #tabla {
+        display: table;
+    }
+
+    thead{
+        width: 100%;
+    }
+    thead tr{
+        width: 100v;
+        display: flex;
+        flex-direction: row;
+    }
+    tbody {
+        display: table-row-group;
+    }
+
+    th, td {
+        display: table-cell;
+        width: 33.3%; 
+    }
+
+    td:before {
+        position: static; 
+        width: auto; 
+        padding-right: 0; 
+    }
+}

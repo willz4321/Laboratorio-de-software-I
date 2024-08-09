@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Web site sobre Formula 2">
+    <meta name="author" content="Facundo suarez">
+    <link rel="stylesheet" href="../styles/formulario.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <header>
+        <h1>
+          Encuesta
+        </h1>
+   </header>
+    <main>
+        <form action="registro.php" method="POST">
+            <section class="seccion-personales">
+              <article class="article-personales-title">
+                <h2>Datos Personales</h2>
+              </article>
+              <article class="article-personales">
+                  <section>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" maxlength="50" placeholder="Ingrese su Nombre" required>
+                  </section>
+                  <section>
+                    <label for="mail">Mail:</label>
+                    <input type="email" id="mail" name="mail" placeholder="Ingrese su casilla de email" required>
+                  </section>
+                  <section>
+                    <label for="fecha">Fecha:</label>
+                    <input type="date" id="fecha" name="fecha" value="2000-01-01">
+                  </section>
+                  <section>
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="381000009" pattern="[0-9]{10}">
+                  </section>
+              </article>
+            </section>
+            <section class="seccion-carrera">
+                <article class="article-carrera-title">
+                    <h2>Sobre la Carrera</h2>
+                  </article>
+                  <article class="article-carrera">
+                      <section>
+                        <label for="carrera">Indique la carrera que cursa:</label>
+                        <select id="carrera" name="carrera">
+                            <option value="Programador universitario">Programador universitario</option>
+                            <option value="Ingenieria en Informatica">Ingenieria en Informatica</option>
+                            <option value="Ingenieria en Computacion">Ingenieria en Computacion</option>
+                            <option value="Licenciatura en Informatica">Licenciatura en Informatica</option>
+                        </select>
+                      </section>
+                      <section class="seccion-carrera-radio">
+                          <legend>¿Recursa la carrera?</legend>
+                          <label for="recursa_no">
+                              <input type="radio" id="recursa_no" name="recursa" value="no" checked> No
+                          </label>
+                          <label for="recursa_si">
+                              <input type="radio" id="recursa_si" name="recursa" value="si"> Sí
+                          </label>
+                      </section>
+                      <section class="seccion-carrera-checkbox">
+                          
+                            <legend>Materia que cursa:</legend>
+                            <label for="materia_taller">
+                                <input type="checkbox" id="materia_taller" name="materia" value="Taller de lenguajes I"> Taller de programación I
+                            </label>
+                            <label for="materia_elementos">
+                                <input type="checkbox" id="materia_elementos" name="materia" value="Elementos de computacion y logica"> Elementos de computación y lógica
+                            </label>
+                            <label for="materia_laboratorio">
+                                <input type="checkbox" id="materia_laboratorio" name="materia" value="Laboratorio I" checked> Laboratorio I
+                            </label>
+                            <label for="materia_otros">
+                                <input type="checkbox" id="materia_otros" name="materia" value="Otras"> Otras
+                            </label>
+                          
+                      </section>
+                  </article>
+            </section>
+            <section class="seccion-materia">
+                <article class="article-materia-title">
+                    <h2>Sobre la Materia</h2>
+                </article>
+                <section>
+                    <h3>Indique el horario de la comisión práctica a la que asiste:</h3>
+                </section>
+                <article class="article-materia">
+                    <section class="horario-materia">
+                        <label for="dia">Día:
+                            <select id="dia" name="dia">
+                                <option value="lunes">Lunes</option>
+                                <option value="martes">Martes</option>
+                                <option value="miercoles">Miércoles</option>
+                                <option value="jueves">Jueves</option>
+                                <option value="viernes">Viernes</option>
+                            </select>   
+                        </label>
+                        <label for="hora">Hora:
+                            <input type="time" id="hora" name="hora">
+                        </label>
+                      </section>
+                      <section>
+                        <label for="satisfaccion">Grado de satisfacción:</label>
+                        <input type="range" id="satisfaccion" name="satisfaccion" min="0" max="100" step="5">
+                      </section>
+                      <section>
+                        <label for="calificacion">Calificación de la materia:</label>
+                        <input type="number" id="calificacion" name="calificacion" min="1" max="10" value="5" required>
+                      </section>
+                </article>
+            </section>
+            <section >
+              <article class="botones">
+                <button class="button-css" type="submit">Enviar</button>
+                <button class="button-css" type="reset">Limpiar</button>
+              </article>
+            </section>
+        </form>
+    </main>
+</body>
+</html>
